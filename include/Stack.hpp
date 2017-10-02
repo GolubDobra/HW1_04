@@ -58,9 +58,4 @@ public:
     }
 };
 
-void stackInit();
-void stackPush();
-void stackPop();
-void stackEmpty();
-
 #endif
