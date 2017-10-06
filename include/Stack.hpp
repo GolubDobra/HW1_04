@@ -41,6 +41,7 @@ public:
       s.count_ = 0;
       s.array_ = nullptr;
     };
+    /*
     //Оператор присваивания с семантикой копирования
     auto operator=(const Stack& s) noexcept{
       if(this == &s) {return *this;}
@@ -68,6 +69,7 @@ public:
         return *this;
       }
     };
+    */
     T& operator [](int pos) noexcept {
         return array_[pos];
     };
