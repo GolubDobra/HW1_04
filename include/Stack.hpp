@@ -41,9 +41,8 @@ public:
       s.count_ = 0;
       s.array_ = nullptr;
     };
-    /*
     //Оператор присваивания с семантикой копирования
-    auto operator=(const Stack& s) noexcept{
+    Stack<T>& operator=(const Stack& s) noexcept{
       if(this == &s) {return *this;}
       else {
         delete[] array_;
@@ -57,19 +56,16 @@ public:
       }
     };
     //Оператор присваивания с семантикой перемещения
-    auto operator=(Stack&& s) noexcept{
-      if(this == &s){return *this;}
-      else{
-        array_size_ = s.array_size_;
-        count_ = s.count_;
-        array_ = s.array_;
-        s.array_size_ = 0;
-        s.count_ = 0;
-        s.array_ = nullptr;
-        return *this;
-      }
+    Stack<T>& operator=(Stack&& s) noexcept{
+      array_size_ = s.array_size_;
+      count_ = s.count_;
+      array_ = s.array_;
+      s.array_size_ = 0;
+      s.count_ = 0;
+      s.array_ = nullptr;
+      return *this;
     };
-    */
+
     T& operator [](int pos) noexcept {
         return array_[pos];
     };
