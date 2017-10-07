@@ -6,10 +6,17 @@ void stackEmpty() {
 	try {
 		cout << endl << "---empty.cpp---" << endl;
 		Stack<char> arrayChar;
+		Stack<char> arrayChar2;
+
 		char wordChar[] = "KCATS_RAHC";
 		for(int i = 0; i < sizeof(wordChar); i++) { arrayChar.push(wordChar[i]); }
+		arrayChar2 = arrayChar;//Копируем arrayChar в arrayChar2
 		while(!arrayChar.empty()) {
 			cout << arrayChar.pop() << " ";
+		}
+		cout << endl << endl;
+		while(!arrayChar2.empty()) {
+			cout << arrayChar2.pop() << " ";
 		}
 		cout << endl << endl;
 	}
