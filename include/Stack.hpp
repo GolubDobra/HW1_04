@@ -22,15 +22,13 @@ public:
     };
     //Конструктор копирования
     Stack(const Stack& s) noexcept{
-      if(this != &s){
         delete[] array_;
         array_size_ = s.array_size_;
         count_ = s.count_;
         array_ = new T[s.array_size_];
-        for(size_t i = 0; i < s.array_size_; ++i) {
+        for(size_t i = 0; i < s.count_; ++i) {
           array_[i] = s.array_[i];
         }
-      }
     };
     //Конструктор перемещения
     Stack(Stack&& s) noexcept{
@@ -43,26 +41,27 @@ public:
     };
     //Оператор присваивания с семантикой копирования
     Stack<T>& operator=(const Stack& s) noexcept{
-      if(this == &s) {return *this;}
-      else {
+      if(this != &s) {
         delete[] array_;
         array_size_ = s.array_size_;
         count_ = s.count_;
         array_ = new T[s.array_size_];
-        for(size_t i = 0; i < s.array_size_; ++i) {
+        for(size_t i = 0; i < s.count_; ++i) {
           array_[i] = s.array_[i];
         }
-        return *this;
       }
+      return *this;
     };
     //Оператор присваивания с семантикой перемещения
     Stack<T>& operator=(Stack&& s) noexcept{
-      array_size_ = s.array_size_;
-      count_ = s.count_;
-      array_ = s.array_;
-      s.array_size_ = 0;
-      s.count_ = 0;
-      s.array_ = nullptr;
+      if(this != &s) {
+        array_size_ = s.array_size_;
+        count_ = s.count_;
+        array_ = s.array_;
+        s.array_size_ = 0;
+        s.count_ = 0;
+        s.array_ = nullptr;
+      }
       return *this;
     };
 
@@ -90,13 +89,14 @@ public:
     T top() const noexcept{
       return array_[count_];
     }
-    T pop() noexcept{
+
+    void pop() noexcept{
         if (count_ == 0) {
             throw runtime_error("---Stack is empty---"); //Пуск исключения
         }
         --count_; //Снижение счетчика на единицу
-        return top();
     };
+
     bool empty() const noexcept{
         if(count() == 0) return true;
         return false;
