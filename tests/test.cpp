@@ -17,17 +17,6 @@ TEST_CASE("Check functions", "[stack]") {
 		IntArr.pop();
 		REQUIRE(IntArr.count() == 1);
 	}
-	SECTION("Check TOP")
-	{
-		Stack<int> IntArr;
-		IntArr.push(1);
-		IntArr.push(2);
-		IntArr.push(3);
-		IntArr.pop();
-		IntArr.pop();
-		int value = IntArr.top();
-		REQUIRE(value == 1);
-	}
 	SECTION("Check EMPTY")
 	{
 		Stack<int> IntArr;
