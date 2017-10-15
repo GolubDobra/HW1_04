@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libmain.a  CMakeFiles/main.dir/sources/main.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libmain.a

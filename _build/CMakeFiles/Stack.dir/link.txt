@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libStack.a  CMakeFiles/Stack.dir/sources/main.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libStack.a

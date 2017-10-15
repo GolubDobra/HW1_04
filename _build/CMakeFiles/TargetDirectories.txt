@@ -1,5 +1,0 @@
-/Users/vladislav/workspace/labs/reports/HW1_04/_build/CMakeFiles/rebuild_cache.dir
-/Users/vladislav/workspace/labs/reports/HW1_04/_build/CMakeFiles/edit_cache.dir
-/Users/vladislav/workspace/labs/reports/HW1_04/_build/CMakeFiles/test.dir
-/Users/vladislav/workspace/labs/reports/HW1_04/_build/CMakeFiles/check.dir
-/Users/vladislav/workspace/labs/reports/HW1_04/_build/CMakeFiles/Stack.dir
