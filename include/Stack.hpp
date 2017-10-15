@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <stdexcept>
+#include <algorithm>
+#include <initializer_list>
 using namespace std;
 
 template <typename T>
@@ -19,6 +21,12 @@ public:
     //Конструктор класса с параметром
     Stack(size_t st) noexcept: array_size_(st),
         array_(new T[st]) { //Конструктор для стека с параметром
+    };
+    Stack(initializer_list<T> l) noexcept:  array_size_ {l.size()},
+                                    count_{l.size()},
+                                    array_{new T[array_size_]}
+    {
+        copy(l.begin(), l.end(), array_);
     };
     //Конструктор копирования
     Stack(const Stack& s) noexcept{
