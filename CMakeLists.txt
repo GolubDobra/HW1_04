@@ -8,23 +8,23 @@ option(BUILD_TESTS "Build tests" OFF)
 
 project(stack)
 
-add_library(stack STATIC ${CMAKE_CURRENT_SOURCE_DIR}/sources/main.cpp)
+add_library(stack INTERFACE)
 
-target_include_directories(stack PUBLIC
+target_include_directories(stack INTERFACE
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
 )
 
 if(BUILD_EXAMPLES)
-  file(GLOB EXAMPLE_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/examples/*.cpp")
-  foreach(EXAMPLE_SOURCE ${EXAMPLE_SOURCES})
-    get_filename_component(EXAMPLE_NAME ${EXAMPLE_SOURCE} NAME_WE)
-    add_executable(${EXAMPLE_NAME} ${EXAMPLE_SOURCE})
-    target_link_libraries(${EXAMPLE_NAME} stack)
-    install(TARGETS ${EXAMPLE_NAME}
+  file(GLOB EXAMPLE_SOURCES "/examples/*.cpp")
+  foreach(EXAMPLE_SOURCE )
+    get_filename_component(EXAMPLE_NAME  NAME_WE)
+    add_executable( )
+    target_link_libraries( stack)
+    install(TARGETS 
       RUNTIME DESTINATION bin
     )
-  endforeach(EXAMPLE_SOURCE ${EXAMPLE_SOURCES})
+  endforeach(EXAMPLE_SOURCE )
 endif()
 
 install(TARGETS stack
