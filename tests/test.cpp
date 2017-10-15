@@ -16,7 +16,7 @@ TEST_CASE("Check functions", "[stack]") {
 		IntArr.pop();
 		IntArr.pop();
 		IntArr.pop();
-		REQUIRE(IntArr.count() == 0);
+		REQUIRE(IntArr.count() == 1);
 	}
 	SECTION("Check INIT")
 	{
