@@ -17,7 +17,8 @@ int main() {
 
     //Удаление элементов из стека типа Char
 		for(int i = 0; i < 7; i++) {
-			cout << Stack_int.pop() << endl;
+			Stack_int.pop();
+			cout << Stack_int.top() << endl;
 		}
 		cout << endl << endl;
 
@@ -32,7 +33,8 @@ int main() {
 
     //Удаление элементов из стека типа Char
 		for(int i = 0; i < 5; i++) {
-			cout << Stack_char.pop();
+			Stack_char.pop()
+			cout << Stack_char.top();
 		}
 		cout << endl << endl;
 
@@ -53,7 +55,8 @@ int main() {
 
     //Удаление элементов из стека типа Char
     for(int i = 0; i < 11; i++) {
-			cout << Stack_char_OW.pop();
+			Stack_char_OW.pop();
+			cout << Stack_char_OW.top();
 		}
 		cout << endl << endl;
 
