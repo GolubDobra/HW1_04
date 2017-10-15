@@ -5,3 +5,11 @@ TEST_CASE("Check init", "[stack]") {
 	Stack<int> IntArr;
 	REQUIRE(IntArr.count() == 0);
 }
+TEST_CASE("Check init", "[stack]") {
+	Stack<int> IntArr;
+	REQUIRE(IntArr.count() == 0);
+}
+TEST_CASE("Check init", "[stack]") {
+	Stack<int> IntArr;
+	REQUIRE(IntArr.count() == 0);
+}
