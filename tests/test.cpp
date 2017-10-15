@@ -7,7 +7,7 @@ TEST_CASE("Check functions", "[stack]") {
 		Stack<int> IntArr;
 		REQUIRE(IntArr.count() == 0);
 	}
-	SECTION("Check POP")
+	SECTION("Check POP and TOP")
 	{
 		Stack<int> IntArr;
 		IntArr.push(1);
@@ -15,7 +15,9 @@ TEST_CASE("Check functions", "[stack]") {
 		IntArr.push(3);
 		IntArr.pop();
 		IntArr.pop();
+		int value = IntArr.top();
 		REQUIRE(IntArr.count() == 1);
+		REQUIRE(value == 1);
 	}
 	SECTION("Check EMPTY")
 	{
