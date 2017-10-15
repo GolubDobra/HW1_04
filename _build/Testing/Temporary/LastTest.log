@@ -1,0 +1,20 @@
+Start testing: Oct 15 22:08 MSK
+----------------------------------------------------------
+1/1 Testing: check
+1/1 Test: check
+Command: "/Users/vladislav/workspace/labs/reports/HW1_04/_build/check" "-s" "-r" "compact" "--use-colour" "yes"
+Directory: /Users/vladislav/workspace/labs/reports/HW1_04/_build
+"check" start time: Oct 15 22:08 MSK
+Output:
+----------------------------------------------------------
+No tests ran.
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"check" end time: Oct 15 22:08 MSK
+"check" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Oct 15 22:08 MSK

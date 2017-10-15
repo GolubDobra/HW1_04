@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Stack.hpp
+iostream
+-
+string
+-
+stdexcept
+-
+
+/Users/vladislav/workspace/labs/reports/HW1_04/sources/main.cpp
+iostream
+-
+Stack.hpp
+/Users/vladislav/workspace/labs/reports/HW1_04/sources/Stack.hpp
+
