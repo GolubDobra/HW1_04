@@ -1,14 +1,5 @@
-# HW1_03
-[![Build Status](https://travis-ci.org/VladislavMashkov/HW1_03.svg?branch=master)](https://travis-ci.org/VladislavMashkov/HW1_03)
-1. [X] Для шаблонного класса stack реализовать:
-       - конструктор с параметром (размер выделяемого массива)
-       - конструктор копирования
-       - конструктор перемещения
-       - оператор присваивания с семантикой копирования
-       - оператор присваивания с семантикой перемещения
-2. [X] Сделать класс stack безопасным относительно исключений (обеспечивающим строгую гарантию), заменив метод `pop` на два соответствующих pop и top.
-3. [X] Пометить все методы одной из трех меток
-       - /*basic*/
-       - /*strong*/
-       - /*noexcept*/
-4. [X] Настроить интеграцию с сервисом Travis CI.
+# HW1_04
+[![Build Status](https://travis-ci.org/VladislavMashkov/HW1_04.svg?branch=master)](https://travis-ci.org/VladislavMashkov/HW1_04)
+1. [X] Добавить конструктор с параметром типа std::initializer_list<T>
+2. [X] Написать для всех методов класса stack тесты с использованием фреймворка Catch
+
