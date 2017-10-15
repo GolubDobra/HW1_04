@@ -5,7 +5,7 @@ TEST_CASE("Check functions", "[stack]") {
 	SECTION("Check INIT")
 	{
 		Stack<int> IntArr;
-		REQUIRE(IntArr.count() == 0);
+		REQUIRE(IntArr.count() == 1);
 	}
 	SECTION("Check POP")
 	{
