@@ -33,7 +33,7 @@ int main() {
 
     //Удаление элементов из стека типа Char
 		for(int i = 0; i < 5; i++) {
-			Stack_char.pop()
+			Stack_char.pop();
 			cout << Stack_char.top();
 		}
 		cout << endl << endl;
