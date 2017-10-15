@@ -11,12 +11,14 @@ void stackEmpty() {
 		char wordChar[] = "KCATS_RAHC";
 		for(int i = 0; i < sizeof(wordChar); i++) { arrayChar.push(wordChar[i]); }
 		arrayChar2 = arrayChar;//Копируем arrayChar в arrayChar2
+		arrayChar.pop()
 		while(!arrayChar.empty()) {
-			cout << arrayChar.pop() << " ";
+			cout << arrayChar.top() << " ";
 		}
 		cout << endl << endl;
+		arrayChar2.pop()
 		while(!arrayChar2.empty()) {
-			cout << arrayChar2.pop() << " ";
+			cout << arrayChar2.top() << " ";
 		}
 		cout << endl << endl;
 	}
